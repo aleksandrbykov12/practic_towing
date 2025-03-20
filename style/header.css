@@ -1,0 +1,25 @@
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  max-width: 1440px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  padding: 15px 80px;
+  background-color: #2f65a5;
+  box-sizing: border-box;
+}
+
+.header__text,
+.header__call-link {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 243%;
+  color: var(--white);
+  text-decoration: none;
+  transition: opacity 0.3s;
+}
+
+.header__call-link:hover {
+  opacity: 0.5;
+}

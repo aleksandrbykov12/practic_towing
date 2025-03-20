@@ -1,0 +1,75 @@
+.about__container {
+  position: relative;
+  max-width: 1440px;
+  margin: 0 auto;
+  margin-bottom: 120px;
+  background-color: #292e34;
+}
+
+.about__wrapper {
+  display: flex;
+  justify-content: space-between;
+  gap: 140px;
+}
+
+.about__list {
+  padding-left: 30px;
+}
+
+.about__list-item {
+  list-style: url(../img/list-style.svg);
+}
+
+.about__image {
+  margin-left: 80px;
+}
+
+.about__hero-text {
+  margin-bottom: 10px;
+  text-align: start;
+}
+
+.about__heading,
+.about__text,
+.about__list-item {
+  text-align: start;
+  color: var(--white);
+}
+
+.about__heading {
+  margin-bottom: 20px;
+  font-weight: 800;
+  font-size: 36px;
+  line-height: 128%;
+}
+
+.about__text {
+  margin-bottom: 20px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+}
+
+.about__element--bottom {
+  position: absolute;
+
+  right: 0;
+  bottom: -120px;
+
+  border-left: 1440px solid transparent; /* Левый край треугольника */
+  border-right: 0px solid transparent; /* Правый край треугольника */
+  border-bottom: 390px solid var(--white); /* Нижний край треугольника (цвет) */
+}
+
+.about__element--blue {
+  position: absolute;
+  right: -19px;
+  bottom: 93px;
+  width: 527px;
+  height: 40px;
+  background-color: var(--blue);
+  transform: rotate(-15.2deg);
+  transform-origin: top left;
+  clip-path: polygon(2.1% 0, 100% 0, 97.9% 100%, 100% 100%, 0 100%);
+  z-index: 100;
+}

@@ -1,0 +1,17 @@
+
+.footer__text {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 162%;
+    text-align: center;
+    color: var(--white);
+
+    cursor: pointer;
+}
+
+footer {
+    padding-top: 63px;
+    padding-bottom: 50px;
+    background-color: #292e34;
+}
