@@ -23,3 +23,9 @@
 .header__call-link:hover {
   opacity: 0.5;
 }
+
+@media (max-width: 700px) {
+  .header {
+    display: none;
+  }
+}

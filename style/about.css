@@ -73,3 +73,38 @@
   clip-path: polygon(2.1% 0, 100% 0, 97.9% 100%, 100% 100%, 0 100%);
   z-index: 100;
 }
+
+@media (max-width: 700px) {
+  .about__element--blue,
+  .about__element--bottom,
+  .about__element--top {
+    display: none;
+  }
+
+  .about__container {
+    padding: 60px 20px;
+    margin-bottom: 0;
+  }
+
+  .about__wrapper {
+    flex-direction: column;
+    gap: 70px;
+  }
+
+  .about__image {
+    margin: 0;
+    width: 100%;
+  }
+
+  .about__heading {
+    font-size: 24px;
+  }
+
+  .about__text {
+    font-size: 12px;
+  }
+
+  .about__list-item {
+    font-size: 12px;
+  }
+}

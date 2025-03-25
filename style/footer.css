@@ -1,17 +1,22 @@
-
 .footer__text {
-    font-family: var(--font-family);
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 162%;
-    text-align: center;
-    color: var(--white);
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 162%;
+  text-align: center;
+  color: var(--white);
 
-    cursor: pointer;
+  cursor: pointer;
 }
 
 footer {
-    padding-top: 63px;
-    padding-bottom: 50px;
-    background-color: #292e34;
+  padding-top: 63px;
+  padding-bottom: 50px;
+  background-color: #292e34;
+}
+
+@media (max-width: 700px) {
+  footer {
+    padding-top: 30px;
+  }
 }

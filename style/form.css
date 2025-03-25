@@ -8,9 +8,13 @@
   font-family: var(--font-family);
 }
 
-.container {
+.container:not(.about__container, .contact__container) {
   background-color: #fff;
-  width: 1440px;
+  max-width: 1440px;
+}
+
+.form__container {
+  width: 100%;
 }
 
 .form__container h3 {
@@ -33,7 +37,7 @@
   margin-top: 40px;
   display: flex;
   justify-content: center;
-  gap: 0 10px;
+  gap: 30px 10px;
 }
 .form__item img {
   display: flex;
@@ -116,4 +120,26 @@
 
   box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.1);
   background: linear-gradient(180deg, #efd923 0%, #ffbc00 100%);
+}
+
+@media (max-width: 700px) {
+  .form__items {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .form__link--left,
+  .form__link--right {
+    position: initial;
+    width: 45px;
+    transform: rotate(90deg);
+  }
+
+  .form__container h2 {
+    font-size: 20px;
+  }
+
+  .form__container p {
+    font-size: 16px;
+  }
 }
