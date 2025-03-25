@@ -3,59 +3,76 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Служба эвакуирования</title>
     <link rel="stylesheet" href="style/style.css" />
-    <link rel="stylesheet" href="style/header.css" />
-    <link rel="stylesheet" href="style/preview.css" />
-    <link rel="stylesheet" href="style/services.css" />
-    <link rel="stylesheet" href="style/about.css" />
-    <link rel="stylesheet" href="style/footer.css" />
-    <link rel="stylesheet" href="style/contact.css" />
-    <link rel="stylesheet" href="style/reviews.css" />
-    <link rel="stylesheet" href="style/form.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      type="image/png"
+      sizes="32x32"
+      rel="icon"
+      href="./img/icons8-эвакуатор-32.png"
+    />
   </head>
   <body>
     <header class="header">
       <div class="header-container">
         <div class="header__text">
-          Ready to assist you 24/7 with the best towing service in Halifax, NS
+          Готовы помочь вам 24/7 с лучшими услугами буксировки в Ростовской
+          области
         </div>
         <div class="header__call">
-          <a href="#" class="header__call-link">Emergency Call 0123456789</a>
+          <a href="tel:79515308444" class="header__call-link"
+            >Экстренный вызов +7 (951) 530 84-44</a
+          >
         </div>
       </div>
     </header>
     <main>
+      <a href="tel:79515308444" class="call-link"></a>
       <section class="preview">
         <div class="container preview__container">
           <div class="preview__wrapper">
-            <h1 class="preview__heading">halifax towing</h1>
-            <img
-              src="./img/preview-city.svg"
-              alt="Автодорога с городским пейзажем"
-              class="preview__image-city"
-            />
+            <h1 class="preview__heading">rnd towing</h1>
+            <picture>
+              <source
+                media="(max-width: 700px)"
+                srcset="./img/background-two.svg"
+              />
+              <img
+                src="./img/preview-city.svg"
+                alt="Автодорога с городским пейзажем"
+                class="preview__image-city"
+              />
+            </picture>
             <img
               src="./img/car.svg"
               alt="Иллюстрация автомобиля эвакуатора"
               class="previews__image-car"
             />
-            <div class="preview__element"></div>
-            <div class="preview__element--yellow-1"></div>
-            <div class="preview__element--yellow-2"></div>
-            <div class="preview__element--blue"></div>
+            <div class="preview__element element"></div>
+            <div class="preview__element--yellow-1 element"></div>
+            <div class="preview__element--yellow-2 element"></div>
+            <div class="preview__element--blue element"></div>
           </div>
         </div>
       </section>
       <section class="services">
         <div class="container services__container">
-          <h3>what we offers</h3>
-          <h2>We offer a variety of<br />towing services in Halifax, NS</h2>
+          <h3>Что мы предлагаем</h3>
+          <h2>
+            Мы предлагаем широкий спектр<br />услуги буксировки в Ростовской
+            области
+          </h2>
           <p>
-            We offer a variety of towing services in Halifax, NS that can be
-            tailored to your needs. <br />
-            Whatever your vehicle problem, we have the right solution. Our
-            services include:
+            Мы предлагаем широкий спектр услуг Эвакуатора в Ростовской области,
+            которые могут быть адаптированы к Вашим потребностям<br />
+            Какой бы ни была проблема с Вашим транспортным средством, у нас есть
+            правильное решение. Наши услуги включают:
           </p>
           <ul class="services__list">
             <li class="services__list-item">
@@ -64,11 +81,14 @@
                 alt=""
                 class="services__item-image"
               />
-              <h4 class="services__item-heading">Towing & recovery</h4>
+              <h4 class="services__item-heading">
+                Буксировка и восстановление
+              </h4>
               <p class="services__item-text">
-                Need roadside assistance? We're here for you 24/7. Whether
-                you're facing a breakdown, a flat tire, or a dead battery, our
-                fast and reliable towing service is just a phone call away.
+                Нужна помощь на дороге? Мы готовы помочь вам 24 часа в сутки, 7
+                дней в неделю. Независимо от того, столкнулись ли вы с поломкой,
+                спустившей шиной или севшим аккумулятором, наша быстрая и
+                надежная служба эвакуации - это всего лишь телефонный звонок.
               </p>
             </li>
             <li class="services__list-item">
@@ -77,11 +97,13 @@
                 alt=""
                 class="services__item-image"
               />
-              <h4 class="services__item-heading">Heavy equipment transport</h4>
+              <h4 class="services__item-heading">
+                Транспортировка тяжелого оборудования
+              </h4>
               <p class="services__item-text">
-                Need to transport heavy equipment or large tools across long
-                distances? Our expert towing professionals ensure safe and
-                reliable delivery.
+                Вам необходимо перевезти тяжелое оборудование или
+                крупногабаритные инструменты на большие расстояния? Наши опытные
+                буксировщики обеспечат безопасную и надежную доставку.
               </p>
             </li>
             <li class="services__list-item">
@@ -90,21 +112,24 @@
                 alt=""
                 class="services__item-image"
               />
-              <h4 class="services__item-heading">Private property towing</h4>
+              <h4 class="services__item-heading">
+                Буксировка частной собственности
+              </h4>
               <p class="services__item-text">
-                Minimize business disruption with our quick vehicle removal. We
-                swiftly remove vehicles to ensure your business remains safe and
-                accessible.
+                Сведите к минимуму сбои в работе благодаря быстрому вывозу
+                транспортных средств. Мы оперативно вывозим транспортные
+                средства, чтобы обеспечить безопасность и доступность вашего
+                бизнеса.
               </p>
             </li>
           </ul>
-          <div class="services__element--bottom"></div>
-          <div class="services__element--yellow"></div>
+          <div class="services__element--bottom element"></div>
+          <div class="services__element--yellow element"></div>
         </div>
       </section>
 
       <section class="about">
-        <div class="about__container">
+        <div class="container about__container">
           <div class="about__wrapper">
             <div class="about__left">
               <img
@@ -114,66 +139,71 @@
               />
             </div>
             <div class="about__right">
-              <h3 class="about__hero-text">Who We Are</h3>
+              <h3 class="about__hero-text">Кто мы такие</h3>
               <h2 class="about__heading">
-                Reliable Halifax, NS towing service provider.
+                Надежный поставщик буксирных услуг в Ростове-на-Дону и
+                Ростовской области.
               </h2>
               <p class="about__text">
-                We are a Halifax-based towing service provider with years of
-                experience helping customers in Nova Scotia. Speed, reliability
-                and professionalism are the three pillars we stand for. <br />
+                Мы являемся базирующимся в Ростовской области поставщиком услуг
+                буксировки с многолетним опытом оказания помощи клиентам.
+                Скорость, надежность и профессионализм - вот три основы, на
+                которых мы стоим. <br />
                 <br />
-                We understand how important it is to have quick assistance when
-                trouble strikes on the road. Our service is available 24 hours a
-                day, 7 days a week, to ensure you have help whenever you need
-                it, from light vehicle towing to heavy vehicle recovery, we are
-                here to help!"
+                Мы понимаем, как важно быстро получить помощь в случае
+                возникновения проблем на дороге. Наш сервис доступен 24 часа в
+                сутки, 7 дней в неделю, чтобы обеспечить вас необходимой помощью
+                в любое время, от буксировки легких транспортных средств до
+                эвакуации тяжелых транспортных средств, мы всегда готовы
+                помочь!"
               </p>
               <ul class="about__list">
-                <li class="about__list-item">24/7 Quick Response</li>
-                <li class="about__list-item">Clear and Affordable Prices</li>
-                <li class="about__list-item">Experienced Team</li>
-                <li class="about__list-item">Modern Equipment</li>
+                <li class="about__list-item">
+                  Быстрое реагирование в режиме 24/7
+                </li>
+                <li class="about__list-item">Понятные и доступные цены</li>
+                <li class="about__list-item">Опытная команда</li>
+                <li class="about__list-item">Современное оборудование</li>
               </ul>
             </div>
           </div>
-          <div class="about__element--bottom"></div>
-          <div class="about__element--top"></div>
-          <div class="about__element--blue"></div>
+          <div class="about__element--bottom element"></div>
+          <div class="about__element--top element"></div>
+          <div class="about__element--blue element"></div>
         </div>
       </section>
 
       <section class="form">
         <div class="container form__container">
-          <h3>how it works</h3>
-          <h2>It's easy as 1,2,3</h2>
+          <h3>как это работает</h3>
+          <h2>Это просто, как 1,2,3</h2>
           <div class="form__items">
             <div class="form__item">
               <img src="./img/number1.png" />
               <p>
-                Fill out the form below to get requesting a tow, providing your
-                location and<br />
-                vehicle details
+                Заполните форму ниже, чтобы получить запрос на буксировку,
+                указав свое местоположение и<br />
+                детали транспортного средства
               </p>
             </div>
             <div class="form__link--left"></div>
             <div class="form__item">
               <img src="./img/number2.png" />
               <p>
-                The tow truck driver assesses your vehicle, secures it to the
-                truck, and transports it to the desired location;
+                Водитель эвакуатора осмотрит ваш автомобиль, закрепит его на
+                грузовике и доставит в нужное место;
               </p>
             </div>
             <div class="form__link--right"></div>
             <div class="form__item">
               <img src="./img//number3.png" />
               <p>
-                Upon arrival, the vehicle is unloaded, payment is made, and any
-                necessary paperwork is completed.
+                По прибытии транспортное средство разгружается, производится
+                оплата и оформляются все необходимые документы.
               </p>
             </div>
           </div>
-          <div class="form__sending">
+          <!-- <div class="form__sending">
             <form class="form__contact">
               <div class="form__top">
                 <input
@@ -216,11 +246,12 @@
               ></textarea>
               <button type="submit" class="form__button">Send a Message</button>
             </form>
-          </div>
+          </div> -->
         </div>
       </section>
       <section class="reviews">
         <div class="reviews__info">
+          <div class="reviews__image-mobile"></div>
           <img class="reviews__img" src="./img//citylandscape.png" alt="" />
           <div class="reviews__items">
             <div class="reviews__item item__indent">
@@ -294,7 +325,7 @@
                 </svg>
               </div>
             </div>
-            <div class="reviews__item">
+            <div class="reviews__item item--google">
               <div class="reviews__item--svg">
                 <svg
                   width="100"
@@ -460,181 +491,188 @@
               </div>
             </div>
           </div>
-          <div class="reviews__element"></div>
-          <div class="reviews__element--yellow"></div>
-          <div class="reviews__element--blue"></div>
+          <div class="reviews__element element"></div>
+          <div class="reviews__element--yellow element"></div>
+          <div class="reviews__element--blue element"></div>
         </div>
       </section>
 
       <section class="contact">
-        <div class="contact__title">
-          <h3>contact us</h3>
-          <h2>Feel free to contact us anytime</h2>
-          <p class="contact__title--text">
-            Need help? Fill out the form , or contact us directly by phone or
-            email. We are ready to assist you 24/7 with fast and reliable towing
-            solutions.
-          </p>
-        </div>
-        <div class="contact__info">
-          <div class="contact__info--item">
-            <div class="contact__info--icon">
-              <svg
-                width="52"
-                height="49"
-                viewBox="0 0 52 49"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M41.6402 13.9236L38.4454 13.027L35.2507 8.74817V5.1062H41.6402V13.9236Z"
-                  fill="#EFD923"
-                />
-                <path
-                  d="M44.8348 24.7855V48.2348H6.49829V24.7855L25.6666 5.1062L44.8348 24.7855Z"
-                  fill="#18549A"
-                />
-                <path
-                  d="M35.2508 41.8454H16.0825C16.0825 36.5522 20.3735 32.2612 25.6667 32.2612C30.9598 32.2612 35.2508 36.5521 35.2508 41.8454Z"
-                  fill="#4DB5FF"
-                />
-                <path
-                  d="M25.6666 29.0666C28.3132 29.0666 30.4586 26.9211 30.4586 24.2745C30.4586 21.6279 28.3132 19.4824 25.6666 19.4824C23.02 19.4824 20.8745 21.6279 20.8745 24.2745C20.8745 26.9211 23.02 29.0666 25.6666 29.0666Z"
-                  fill="#4DB5FF"
-                />
-                <path
-                  d="M41.6402 13.9236L38.4454 13.027L35.2507 8.74821L25.6666 0.984863L0.112793 21.6827L4.13813 26.6665L6.49832 24.7856L25.6666 5.10624L44.8349 24.7856L47.1951 26.6665L51.2204 21.6827L41.6402 13.9236Z"
-                  fill="#4DB5FF"
-                />
-                <path
-                  d="M44.8348 20.6324V24.7855L25.6666 9.22728L6.49829 24.7855V20.6324L25.6666 5.1062L35.2507 12.8693V8.74817L41.6401 13.9236V18.0447L44.8348 20.6324Z"
-                  fill="#EFD923"
-                />
-              </svg>
+        <div class="container contact__container">
+          <div class="contact__title">
+            <h3>связаться с нами</h3>
+            <h2>Не стесняйтесь обращаться к нам в любое время</h2>
+            <p class="contact__title--text">
+              Нужна помощь? Свяжитесь с нами напрямую по телефону. Мы готовы
+              помочь вам в режиме 24/7 с быстрыми и надежными решениями по
+              буксировке.
+            </p>
+          </div>
+          <div class="contact__info">
+            <div class="contact__info--item">
+              <div class="contact__info--icon">
+                <svg
+                  width="52"
+                  height="49"
+                  viewBox="0 0 52 49"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M41.6402 13.9236L38.4454 13.027L35.2507 8.74817V5.1062H41.6402V13.9236Z"
+                    fill="#EFD923"
+                  />
+                  <path
+                    d="M44.8348 24.7855V48.2348H6.49829V24.7855L25.6666 5.1062L44.8348 24.7855Z"
+                    fill="#18549A"
+                  />
+                  <path
+                    d="M35.2508 41.8454H16.0825C16.0825 36.5522 20.3735 32.2612 25.6667 32.2612C30.9598 32.2612 35.2508 36.5521 35.2508 41.8454Z"
+                    fill="#4DB5FF"
+                  />
+                  <path
+                    d="M25.6666 29.0666C28.3132 29.0666 30.4586 26.9211 30.4586 24.2745C30.4586 21.6279 28.3132 19.4824 25.6666 19.4824C23.02 19.4824 20.8745 21.6279 20.8745 24.2745C20.8745 26.9211 23.02 29.0666 25.6666 29.0666Z"
+                    fill="#4DB5FF"
+                  />
+                  <path
+                    d="M41.6402 13.9236L38.4454 13.027L35.2507 8.74821L25.6666 0.984863L0.112793 21.6827L4.13813 26.6665L6.49832 24.7856L25.6666 5.10624L44.8349 24.7856L47.1951 26.6665L51.2204 21.6827L41.6402 13.9236Z"
+                    fill="#4DB5FF"
+                  />
+                  <path
+                    d="M44.8348 20.6324V24.7855L25.6666 9.22728L6.49829 24.7855V20.6324L25.6666 5.1062L35.2507 12.8693V8.74817L41.6401 13.9236V18.0447L44.8348 20.6324Z"
+                    fill="#EFD923"
+                  />
+                </svg>
+              </div>
+              <div class="contact__info--desc">
+                <div class="contact__info--title">Addres:</div>
+                <div class="contact__info--text">
+                  123 Towing Street, Halifax, NS
+                </div>
+              </div>
             </div>
-            <div class="contact__info--desc">
-              <div class="contact__info--title">Addres:</div>
-              <div class="contact__info--text">
-                123 Towing Street, Halifax, NS
+            <div class="contact__info--item">
+              <div class="contact__info--icon">
+                <svg
+                  width="48"
+                  height="49"
+                  viewBox="0 0 48 49"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M41.7186 30.5161V42.3286C37.6131 42.3286 24.2118 41.8275 12.4826 30.2207C0.874787 18.4905 0.374878 5.08694 0.374878 0.984863H12.1874L15.1405 12.7974L7.99403 19.3237C9.76581 22.5722 11.9807 25.5253 14.5794 28.1241C17.1782 30.7228 20.1313 32.9377 23.3796 34.7095L29.9061 27.563L41.7186 30.5161Z"
+                    fill="#18549A"
+                  />
+                  <path
+                    d="M47.6249 40.8521V43.8052C47.6249 46.2517 45.6417 48.2349 43.1952 48.2349H0.374878V45.2817H43.1952C44.0107 45.2817 44.6718 44.6207 44.6718 43.8052V40.8521C44.6718 40.0365 44.0107 39.3755 43.1952 39.3755H41.7186V36.4224H43.1952C45.6417 36.4224 47.6249 38.4056 47.6249 40.8521Z"
+                    fill="#4DB5FF"
+                  />
+                  <path
+                    d="M44.6718 11.3208C44.6718 17.0203 38.736 21.6567 31.3827 21.6567H21.0468L23.0549 19.3532C20.0133 17.4634 18.0936 14.5691 18.0936 11.3208C18.0936 5.62127 24.0294 0.984863 31.3827 0.984863C38.736 0.984863 44.6718 5.62127 44.6718 11.3208Z"
+                    fill="#EFD923"
+                  />
+                  <path
+                    d="M31.3827 12.7974C32.1982 12.7974 32.8593 12.1363 32.8593 11.3208C32.8593 10.5053 32.1982 9.84424 31.3827 9.84424C30.5672 9.84424 29.9061 10.5053 29.9061 11.3208C29.9061 12.1363 30.5672 12.7974 31.3827 12.7974Z"
+                    fill="#1B6CCB"
+                  />
+                  <path
+                    d="M37.2889 12.7974C38.1044 12.7974 38.7655 12.1363 38.7655 11.3208C38.7655 10.5053 38.1044 9.84424 37.2889 9.84424C36.4735 9.84424 35.8124 10.5053 35.8124 11.3208C35.8124 12.1363 36.4735 12.7974 37.2889 12.7974Z"
+                    fill="#1B6CCB"
+                  />
+                  <path
+                    d="M25.4764 12.7974C26.2919 12.7974 26.953 12.1363 26.953 11.3208C26.953 10.5053 26.2919 9.84424 25.4764 9.84424C24.661 9.84424 23.9999 10.5053 23.9999 11.3208C23.9999 12.1363 24.661 12.7974 25.4764 12.7974Z"
+                    fill="#1B6CCB"
+                  />
+                  <path
+                    d="M35.8124 36.4224H41.7186V39.3755H35.8124V36.4224Z"
+                    fill="#1B6CCB"
+                  />
+                </svg>
+              </div>
+              <div class="contact__info--desc">
+                <div class="contact__info--title">Phone:</div>
+                <div class="contact__info--text">
+                  <a href="tel:79515308444">+7 (951) 530 84 44</a>
+                </div>
+              </div>
+            </div>
+            <div class="contact__info--item">
+              <div class="contact__info--icon">
+                <svg
+                  width="51"
+                  height="49"
+                  viewBox="0 0 51 49"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M50.5333 19.8849V48.2349H0.133301V19.8849L9.5833 25.8069L25.3333 35.6349L41.0833 25.8069L50.5333 19.8849Z"
+                    fill="#1B6CCB"
+                  />
+                  <path
+                    d="M41.0834 25.8069V41.9349H9.58337V25.8069L25.3334 35.6349L41.0834 25.8069Z"
+                    fill="#18549A"
+                  />
+                  <path
+                    d="M41.0834 0.984863V25.8069L25.3334 35.6349L9.58337 25.8069V0.984863H41.0834Z"
+                    fill="#4DB5FF"
+                  />
+                  <path
+                    d="M9.5833 13.9944V25.8069L0.133301 19.8849L9.5833 13.9944Z"
+                    fill="#EFD923"
+                  />
+                  <path
+                    d="M50.5334 19.8849L41.0834 25.8069V13.9944L50.5334 19.8849Z"
+                    fill="#EFD923"
+                  />
+                  <path
+                    d="M15.8833 7.28479H19.0333V10.4348H15.8833V7.28479Z"
+                    fill="#80EAFF"
+                  />
+                  <path
+                    d="M22.1832 7.28479H34.7832V10.4348H22.1832V7.28479Z"
+                    fill="#80EAFF"
+                  />
+                  <path
+                    d="M15.8833 13.5848H19.0333V16.7348H15.8833V13.5848Z"
+                    fill="#80EAFF"
+                  />
+                  <path
+                    d="M22.1832 13.5848H34.7832V16.7348H22.1832V13.5848Z"
+                    fill="#80EAFF"
+                  />
+                  <path
+                    d="M15.8833 19.8849H19.0333V23.0349H15.8833V19.8849Z"
+                    fill="#80EAFF"
+                  />
+                  <path
+                    d="M22.1832 19.8849H34.7832V23.0349H22.1832V19.8849Z"
+                    fill="#80EAFF"
+                  />
+                </svg>
+              </div>
+              <div class="contact__info--desc">
+                <div class="contact__info--title">Email:</div>
+                <div class="contact__info--text">
+                  <a href="mailto:info@example.com">info@example.com</a>
+                </div>
               </div>
             </div>
           </div>
-          <div class="contact__info--item">
-            <div class="contact__info--icon">
-              <svg
-                width="48"
-                height="49"
-                viewBox="0 0 48 49"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M41.7186 30.5161V42.3286C37.6131 42.3286 24.2118 41.8275 12.4826 30.2207C0.874787 18.4905 0.374878 5.08694 0.374878 0.984863H12.1874L15.1405 12.7974L7.99403 19.3237C9.76581 22.5722 11.9807 25.5253 14.5794 28.1241C17.1782 30.7228 20.1313 32.9377 23.3796 34.7095L29.9061 27.563L41.7186 30.5161Z"
-                  fill="#18549A"
-                />
-                <path
-                  d="M47.6249 40.8521V43.8052C47.6249 46.2517 45.6417 48.2349 43.1952 48.2349H0.374878V45.2817H43.1952C44.0107 45.2817 44.6718 44.6207 44.6718 43.8052V40.8521C44.6718 40.0365 44.0107 39.3755 43.1952 39.3755H41.7186V36.4224H43.1952C45.6417 36.4224 47.6249 38.4056 47.6249 40.8521Z"
-                  fill="#4DB5FF"
-                />
-                <path
-                  d="M44.6718 11.3208C44.6718 17.0203 38.736 21.6567 31.3827 21.6567H21.0468L23.0549 19.3532C20.0133 17.4634 18.0936 14.5691 18.0936 11.3208C18.0936 5.62127 24.0294 0.984863 31.3827 0.984863C38.736 0.984863 44.6718 5.62127 44.6718 11.3208Z"
-                  fill="#EFD923"
-                />
-                <path
-                  d="M31.3827 12.7974C32.1982 12.7974 32.8593 12.1363 32.8593 11.3208C32.8593 10.5053 32.1982 9.84424 31.3827 9.84424C30.5672 9.84424 29.9061 10.5053 29.9061 11.3208C29.9061 12.1363 30.5672 12.7974 31.3827 12.7974Z"
-                  fill="#1B6CCB"
-                />
-                <path
-                  d="M37.2889 12.7974C38.1044 12.7974 38.7655 12.1363 38.7655 11.3208C38.7655 10.5053 38.1044 9.84424 37.2889 9.84424C36.4735 9.84424 35.8124 10.5053 35.8124 11.3208C35.8124 12.1363 36.4735 12.7974 37.2889 12.7974Z"
-                  fill="#1B6CCB"
-                />
-                <path
-                  d="M25.4764 12.7974C26.2919 12.7974 26.953 12.1363 26.953 11.3208C26.953 10.5053 26.2919 9.84424 25.4764 9.84424C24.661 9.84424 23.9999 10.5053 23.9999 11.3208C23.9999 12.1363 24.661 12.7974 25.4764 12.7974Z"
-                  fill="#1B6CCB"
-                />
-                <path
-                  d="M35.8124 36.4224H41.7186V39.3755H35.8124V36.4224Z"
-                  fill="#1B6CCB"
-                />
-              </svg>
-            </div>
-            <div class="contact__info--desc">
-              <div class="contact__info--title">Phone:</div>
-              <div class="contact__info--text">
-                <a href="tel:(555) 123-4567">(555) 123-4567</a>
-              </div>
-            </div>
+          <div class="contact__location">
+            <script
+              type="text/javascript"
+              charset="utf-8"
+              async
+              src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ab937eea523684346c2c852cbc49020042a5a9f51fac1d63a672d43dbc0fcd52a&amp;width=100%25&amp;height=400&amp;lang=ru_RU&amp;scroll=true"
+            ></script>
           </div>
-          <div class="contact__info--item">
-            <div class="contact__info--icon">
-              <svg
-                width="51"
-                height="49"
-                viewBox="0 0 51 49"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M50.5333 19.8849V48.2349H0.133301V19.8849L9.5833 25.8069L25.3333 35.6349L41.0833 25.8069L50.5333 19.8849Z"
-                  fill="#1B6CCB"
-                />
-                <path
-                  d="M41.0834 25.8069V41.9349H9.58337V25.8069L25.3334 35.6349L41.0834 25.8069Z"
-                  fill="#18549A"
-                />
-                <path
-                  d="M41.0834 0.984863V25.8069L25.3334 35.6349L9.58337 25.8069V0.984863H41.0834Z"
-                  fill="#4DB5FF"
-                />
-                <path
-                  d="M9.5833 13.9944V25.8069L0.133301 19.8849L9.5833 13.9944Z"
-                  fill="#EFD923"
-                />
-                <path
-                  d="M50.5334 19.8849L41.0834 25.8069V13.9944L50.5334 19.8849Z"
-                  fill="#EFD923"
-                />
-                <path
-                  d="M15.8833 7.28479H19.0333V10.4348H15.8833V7.28479Z"
-                  fill="#80EAFF"
-                />
-                <path
-                  d="M22.1832 7.28479H34.7832V10.4348H22.1832V7.28479Z"
-                  fill="#80EAFF"
-                />
-                <path
-                  d="M15.8833 13.5848H19.0333V16.7348H15.8833V13.5848Z"
-                  fill="#80EAFF"
-                />
-                <path
-                  d="M22.1832 13.5848H34.7832V16.7348H22.1832V13.5848Z"
-                  fill="#80EAFF"
-                />
-                <path
-                  d="M15.8833 19.8849H19.0333V23.0349H15.8833V19.8849Z"
-                  fill="#80EAFF"
-                />
-                <path
-                  d="M22.1832 19.8849H34.7832V23.0349H22.1832V19.8849Z"
-                  fill="#80EAFF"
-                />
-              </svg>
-            </div>
-            <div class="contact__info--desc">
-              <div class="contact__info--title">Email:</div>
-              <div class="contact__info--text">
-                <a href="mailto:info@example.com">info@example.com</a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="contact__location">
-          <img src="./img/maps.jpg" alt="заглушка для google maps" />
         </div>
       </section>
     </main>
     <footer class="footer">
-      <p class="footer__text">Copyright © 2024 your company</p>
+      <p class="footer__text">Copyright © 2024 RnD-Towing</p>
     </footer>
 
     <script></script>
