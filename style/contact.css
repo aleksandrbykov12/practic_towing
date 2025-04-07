@@ -72,6 +72,30 @@ h2 {
   margin-top: 60px;
 }
 
+.price__button {
+  border-radius: 100px;
+  padding: 20px 30px;
+  margin-top: 50px;
+  width: 100%;
+
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 175%;
+
+  box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.1);
+  background: linear-gradient(180deg, #efd923 0%, #ffbc00 100%);
+
+  border: none;
+  cursor: pointer;
+
+  transition: opacity ease 0.2s;
+}
+
+.price__button:hover {
+  opacity: 0.5;
+}
+
 @media (max-width: 700px) {
   .contact h2 {
     font-size: 16px;
